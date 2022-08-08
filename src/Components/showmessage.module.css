@@ -1,0 +1,8 @@
+.msg-container {
+  color: black;
+  background-color: #ddffdd;
+}
+.msg-container .msg-p {
+  font-size: 1.2rem;
+  border-left: 5px solid #04aa6d;
+}

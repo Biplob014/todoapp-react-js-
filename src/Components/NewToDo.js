@@ -4,65 +4,6 @@ import { v4 as uuidv4 } from "uuid";
 import style from "./newtodo.module.css";
 import ShowMessage from "./ShowMessage";
 
-// const NewToDo = (props) => {
-//   const [user, setUser] = useState({ title: "", desc: "" });
-//   const { title, desc } = user;
-
-//   const handleChange = (event) => {
-//     const name = event.target.name;
-//     const value = event.target.value;
-
-//     setUser((oldTodo) => {
-//       return { ...oldTodo, [name]: value };
-//     });
-
-//     // // another way
-//     // if (name === "title") setUser({ title: value, desc });
-//     // else if (name === "desc") setUser({ title, desc: value });
-//   };
-
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
-//     props.onTodo(user);
-//     setUser({ title: "", desc: "" });
-//   };
-
-//   return (
-//     <form className={style.form} onSubmit={handleSubmit}>
-//       <div className={style["form-field"]}>
-//         <label htmlFor="title">Title :</label>
-//         <input
-//           type="text"
-//           id="title"
-//           placeholder="Enter your todo"
-//           value={title}
-//           name="title"
-//           onChange={handleChange}
-//           required
-//         />
-//       </div>
-
-//       <div className={style["form-field"]}>
-//         <label htmlFor="desc">Description :</label>
-//         <textarea
-//           type="text"
-//           id="desc"
-//           placeholder="Enter your description"
-//           value={desc}
-//           name="desc"
-//           onChange={handleChange}
-//           required
-//         />
-//       </div>
-//       <button type="submit">Add todo</button>
-//     </form>
-//   );
-// };
-// export default NewToDo;
-
-// //////////////////////////////////////
-// practice
-// ////////////////////////////////////
 const NewToDo = (props) => {
   const [newTodo, setNewTodo] = useState({ title: "", desc: "" });
   const { title, desc } = newTodo;
